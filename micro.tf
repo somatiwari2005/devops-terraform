@@ -4,7 +4,7 @@ secret_key = "${var.secret_key}"
 region = "sa-east-1"
 }
 resource "aws_instance" "terraform" {
-ami = "ami-00138b07206d4ceaf"
+ami = "ami-00023c695a5493524"
 instance_type = "t2.micro"
 key_name = "928f9f6274114cbfb31e59f2139de568-key"
 }
