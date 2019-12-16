@@ -10,5 +10,5 @@ instance_type = "t2.micro"
 key_name = "928f9f6274114cbfb31e59f2139de568-key"
 }
 output "ip" {
-    value = "${join(",", aws_instance.web.*.public_ip)}"
+    value = "${join(",", aws_instance.terraform.*.public_ip)}"
 }
