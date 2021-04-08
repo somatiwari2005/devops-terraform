@@ -3,7 +3,7 @@ access_key = var.access_key
 secret_key = var.secret_key
 region = "sa-east-1"
 }
-
+data "aws_availability_zones" "available" {} # List of availability zones in a given region
 # NETWORKING #
 resource "aws_vpc" "vpc" {
   cidr_block           = var.network_address_space
